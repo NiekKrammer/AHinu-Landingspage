@@ -1,0 +1,950 @@
+@font-face {
+  font-family: earthtracks;
+  src: url(../public/Asserts/fonts/Yeyey-1pK2.otf);
+}
+
+@font-face {
+  font-family: Nipok;
+  src: url(../public/Asserts/fonts/Yeyey-1pK2.otf);
+}
+
+@font-face {
+  font-family: WendyOne;
+  src: url(../public/Asserts/fonts/Yeyey-1pK2.otf);
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  background-color: #F5F6FB;
+}
+
+.navbar {
+  background-color: #F5F6FB !important;
+}
+
+.navbar .navbar-brand {
+  color: #00A0E2 !important;
+  font-family: Nipok;
+  font-size: 30px;
+  padding-left: 5 0px;
+  pointer-events: none;
+}
+
+.navbar .nav-link {
+  font-family: earthtracks;
+  color: #292727 !important;
+  font-size: 28px;
+  opacity: 0.9;
+}
+
+.navbar .nav-link:hover {
+  background-color: #00A0E2;
+  transition: .1s ease;
+
+}
+
+.navbar img {
+  pointer-events: none;
+  text-decoration: none;
+
+}
+
+.navbar .nav-item {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.navbar img {
+  height: 14vh;
+}
+
+
+@media (max-width: 1105px) {
+
+  .navbar .nav-item {
+    display: none;
+  }
+
+}
+
+@media (max-width: 900px) {
+  .navbar {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 800px) {
+  .navbar {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 542px) {
+  .navbar {
+    margin-right: 60px;
+  }
+}
+
+@media (max-width: 400px) {
+
+  .navbar-brand {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .navbar .ahlogo {
+    margin-left: -20px;
+
+  }
+
+}
+
+/* ---------------- */
+
+.hero-section video {
+  width: 100%;
+  max-height: 100%;
+  background-image: url(../public/Asserts/ahgif.gif);
+  background-size: 70%;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-color: #F5F6FB;
+  margin-top: 20px;
+  margin-bottom: -60px;
+}
+
+.hero-section #player-overlay-mobile {
+  display: none;
+}
+
+.hero-section h1 {
+  position: absolute;
+  top: 8%;
+  font-family: Nipok;
+  left: 50%;
+  text-align: center;
+  transform: translateX(-50%) translateY(-50%);
+  color: #00A0E2;
+  font-size: 60px;
+  z-index: 100;
+}
+
+.hero-section h3 {
+  position: absolute;
+  top: 13%;
+  font-family: WendyOne;
+  left: 50%;
+  text-align: center;
+  transform: translateX(-50%) translateY(-50%);
+  color: #F5F6FB;
+  font-size: 28px;
+  padding-top: 20px;
+  z-index: 100;
+}
+
+.hero-section a {
+  background-color: #00A0E2;
+  color: #201f1f;
+  display: inline-block;
+  margin: 10px;
+  padding: 3px;
+  text-align: center;
+  font-family: WendyOne;
+  z-index: 1000 !important;
+  font-size: 23px;
+  border-radius: 5px;
+  text-decoration: none;
+  width: 180px;
+  border-radius: 5px;
+}
+
+.hero-section a:hover {
+  transition: .1s ease;
+  transform: scale(1.1);
+}
+
+.hero-section .links {
+  margin-top: -75px;
+  z-index: 1000;
+  position: absolute;
+  font-family: Nipok;
+  left: 35%;
+  text-align: center;
+  transform: translateX(-25%) translateY(-50%);
+}
+
+.hero-section a.buy-white {
+  background-color: #F5F6FB;
+}
+
+.hero-section div.text-center {
+  background-color: #F5F6FB;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.hero-section div.col-12.p-0.m-0 {
+  background-color: #F5F6FB;
+
+}
+
+/* media query's */
+
+
+@media (max-width: 1090px) {
+  .hero-section h1 {
+    font-size: 45px;
+    top: 10%;
+  }
+
+  .hero-section h3 {
+    top: 12%;
+    font-size: 30px;
+    left: 36%;
+    transform: translateX(-20%);
+  }
+
+  .hero-section .links {
+    padding-bottom: 20px;
+    text-align: center;
+    left: 30%;
+    margin-top: -15px;
+  }
+
+  .hero-section div.text-center a {
+    font-size: 20px;
+  }
+
+  .hero-section div.text-center {
+    margin-top: -40px;
+    margin-bottom: -20px;
+
+  }
+
+  .hero-section video {
+    margin: 0px;
+  }
+
+}
+
+@media (max-width: 900px) {
+  .hero-section h1 {
+    font-size: 45px;
+    top: 10%;
+  }
+
+  .hero-section h3 {
+    top: 19%;
+    font-size: 20px;
+  }
+
+  .hero-section .links {
+    margin-top: -45px;
+    left: 4%;
+    text-align: center;
+    transform: translateX(0%) translateY(-50%);
+  }
+
+  .hero-section div.text-center a {
+    margin-bottom: -30px;
+    font-size: 15px;
+
+  }
+
+}
+
+@media (max-width: 800px) {
+  .hero-section h1 {
+    font-size: 70px;
+    margin-top: -45px;
+  }
+
+  .hero-section h3 {
+    top: 9%;
+    font-size: 29px;
+    left: 30%;
+    transform: translateX(-20%);
+  }
+
+  .hero-section a {
+    font-size: 14px;
+    font-size: 18px;
+    width: 138px;
+    text-align: center;
+    padding: 6px 0px;
+    margin: 5px;
+  }
+
+  .hero-section #player-overlay-mobile {
+    display: block;
+  }
+
+  .hero-section #player-overlay {
+    display: none;
+  }
+
+  .hero-section .links {
+    margin-top: -95px;
+    z-index: 1000;
+    position: absolute;
+    font-family: Nipok;
+    left: 15%;
+    text-align: center;
+    transform: translateX(-10%) translateY(-31%);
+  }
+}
+
+@media (max-width: 700px) {
+
+  .hero-section video {
+    background-size: 70%;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 20px;
+  }
+
+  .hero-section div.text-center a {
+    margin: 5px;
+    font-size: 15px;
+  }
+
+  .hero-section div.text-center {
+
+    margin-top: -40px;
+  }
+}
+
+@media (max-width: 540px) {
+  .hero-section video {
+    margin-top: -50px;
+    background-size: 80%;
+  }
+
+  .hero-section div.text-center {
+    margin-top: -10px;
+    padding: 0px;
+  }
+
+  .hero-section div.text-center a {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 290px) {
+  .hero-section h1 {
+    font-size: 40px;
+    margin-top: -24px;
+  }
+
+  .hero-section h3 {
+    top: 9%;
+    font-size: 19px;
+    left: 30%;
+    transform: translateX(-20%);
+  }
+
+  .hero-section .links {
+    margin-top: -137px;
+    z-index: 1000;
+    position: absolute;
+    font-family: Nipok;
+    left: -19%;
+    text-align: center;
+    transform: translateX(7%) translateY(21%);
+  }
+
+  .hero-section a {
+    font-size: 16px;
+  }
+}
+
+/* ------ About ---------- */
+
+#about {
+  background-color: #00A0E2;
+  padding-bottom: 100px;
+  margin-top: 70px;
+
+}
+
+.about {
+  color: #F5F6FB;
+  max-width: 700px;
+  margin: 0px auto;
+  margin-top: -20px;
+}
+
+.about h1 {
+  font-family: Nipok;
+  margin-top: 65px;
+  text-align: center;
+  color: #292727;
+  font-size: 35px;
+}
+
+.about p {
+  font-family: earthtracks;
+  font-weight: 200;
+  padding-left: 70px;
+  letter-spacing: 2px;
+  word-spacing: 10px;
+  font-size: 18px;
+  z-index: 10;
+  padding-top: 28px;
+  line-height: 35px;
+}
+
+.about .about-bg-img {
+  position: relative;
+}
+
+.about .about-bg-img img {
+  position: absolute;
+  width: 700px;
+}
+
+@media (max-width: 800px) {
+  .about h1 {
+    padding-left: 0px;
+    font-size: 31px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+
+  }
+
+  .about p {
+    padding: 20px;
+    line-height: 31px;
+    letter-spacing: 2px;
+    font-size: 18px;
+
+  }
+
+}
+
+@media (max-width: 600px) {
+  .about h1 {
+    padding-left: 0px;
+    font-size: 29px;
+  }
+
+  .about p {
+    padding: 20px;
+    line-height: 31px;
+    letter-spacing: 2px;
+    font-size: 15px;
+
+  }
+
+}
+
+/* ------------------  */
+
+.buy-sell {
+  background-color: #F5F6FB;
+  padding: 50px 60px;
+}
+
+.buy-sell .toke {
+  font-size: 35px;
+
+}
+
+.buy-sell h1 {
+  color: #00A0E2;
+  font-family: Nipok;
+  font-size: 30px;
+  margin-bottom: 20px;
+  padding-top: 50px;
+  text-align: center;
+}
+
+.buy-sell .toke {
+  color: #292727;
+  margin-top: -40px;
+}
+
+.buy-sell .col-4 {
+  padding-right: 5px;
+  padding-left: 5px;
+  padding-top: 5px;
+}
+
+.buy-sell .flippy {
+  text-align: center;
+  background-color: #00A0E2;
+  padding: 10px 20px;
+  border-radius: 5px;
+  height: 90px;
+}
+
+.buy-sell .flippy h4 {
+  font-family: Nipok;
+  margin-top: 4px;
+  font-size: 26px;
+  margin-bottom: 0px;
+  color: #292727;
+
+}
+
+.buy-sell .flippy h5 {
+  font-family: earthtracks;
+  color: #F5F6FB;
+
+}
+
+.buy-sell .flippy h6 {
+  color: #F5F6FB;
+  font-size: 32px;
+  font-family: Nipok;
+  padding-top: 16px;
+}
+
+.buy-sell .table-bottom {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+  justify-content: center;
+}
+
+.buy-sell img {
+  margin-top: 30px;
+  border: 9px solid #00A0E2;
+  border-radius: 6px;
+}
+
+@media (max-width: 1050px) {
+
+  .buy-sell .flippy h5 {
+    font-size: 16px;
+  }
+
+  .buy-sell .table-bottom .border-bot {
+    margin: 0 auto;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    padding-top: 20px;
+  }
+
+  .buy-sell img {
+    width: 130%;
+  }
+
+
+}
+
+@media (max-width: 950px) {
+  .buy-sell .fliqpy-sell {
+    text-align: center;
+  }
+
+  .buy-sell .flippy-buy {
+    text-align: center;
+  }
+}
+
+@media (max-width: 900px) {
+  .buy-sell .table-bottom h6 {
+    color: #e200e2;
+    font-family: Nipok;
+    font-size: 25px;
+    justify-content: center;
+  }
+
+  .buy-sell .table-bottom h5 {
+    color: #00A0E2;
+    font-family: earthtracks;
+    font-size: 25px;
+    justify-content: center;
+
+  }
+
+  .buy-sell .fliqpy-sell {
+    text-align: center;
+  }
+
+  .buy-sell .flippy-buy {
+    text-align: center;
+  }
+
+  .buy-sell .fliqpy-sell img {
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 800px) {
+  .buy-sell {
+    background-color: #fff;
+    padding: 20px 20px;
+  }
+
+  .buy-sell img {
+    width: 125%;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+
+  .buy-sell .toke {
+    font-size: 31px;
+  }
+
+  .buy-sell h1 {
+    font-size: 28px;
+  }
+
+  .buy-sell .flippy {
+    padding: 10px 10px;
+  }
+
+  .buy-sell .flippy h6 {
+    font-size: 23px;
+    padding-top: 22px;
+  }
+
+  .buy-sell .flippy h4 {
+    font-size: 26px;
+    padding-top: 4px;
+  }
+
+  .buy-sell .flippy h5 {
+    font-size: 18px;
+  }
+
+  .buy-sell .flippy-buy img {
+    margin-top: 98px;
+    height: 250px;
+  }
+
+  .buy-sell .fliqpy-sell img {
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 767px) {
+
+  .buy-sell .toke {
+    font-size: 31px;
+    margin-bottom: 50px;
+
+  }
+
+  .buy-sell h1 {
+    margin-top: -50px;
+  }
+
+  .buy-sell img {
+    margin-top: 30px;
+    border: 7px solid #00A0E2;
+    border-radius: 6px;
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  .buy-sell .toke {
+    font-size: 29px;
+
+  }
+
+  .buy-sell h1 {
+    font-size: 25px;
+  }
+
+  .buy-sell .flippy h4 {
+    font-size: 24px;
+  }
+
+  .buy-sell img {
+    margin-top: 30px;
+    border: 5px solid #00A0E2;
+    border-radius: 6px;
+    margin-top: -10px;
+    margin-bottom: -20px;
+  }
+
+}
+
+
+@media (max-width: 500px) {
+  .buy-sell .table-bottom h6 {
+    color: #00A0E2;
+    font-family: Nipok;
+    font-size: 35px;
+    margin-top: -30px;
+  }
+
+  .buy-sell .table-bottom h5 {
+    margin-top: -30px;
+
+  }
+
+  .buy-sell .flippy h4 {
+    font-size: 21px;
+
+  }
+
+  .buy-sell .flippy h5 {
+    font-size: 15px;
+
+  }
+
+  .buy-sell h1 {
+    font-size: 22px;
+  }
+
+  .buy-sell img {
+    width: 145%;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+}
+
+@media (max-width: 450px) {
+
+  .buy-sell img {
+    width: 150%;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+}
+
+
+@media (max-width: 375px) {
+
+  .buy-sell img {
+    width: 170%;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+}
+
+@media (max-width: 290px) {
+  .buy-sell .flippy h6 {
+    font-size: 17px;
+  }
+
+  .buy-sell .flippy h5 {
+    font-size: 12px;
+  }
+
+  .buy-sell .flippy h4 {
+    font-size: 25px;
+  }
+
+  .buy-sell .flippy-buy img {
+    margin-top: 98px;
+    height: 200px;
+  }
+
+  .buy-sell .fliqpy-sell img {
+    height: 250px;
+    margin-top: 90px;
+  }
+}
+
+/* --------------------------- */
+
+.howtobuy {
+  background-image: linear-gradient(30deg, #F5F6FB 50%, #09f 50%);
+  background-size: cover;
+  padding-bottom: 100px;
+}
+
+.howtobuy h1 {
+  color: #292727;
+  text-align: center;
+  font-family: Nipok;
+  padding-top: 90px;
+  margin-bottom: 120px;
+  font-size: 35px;
+}
+
+.howtobuy h6 {
+  font-family: Nipok;
+  color: #00A0E2;
+  font-size: 26px;
+}
+
+.howtobuy h5 {
+  font-family: Nipok;
+  color: #292727;
+  font-size: 22px;
+}
+
+.howtobuy p {
+  font-family: earthtracks;
+  opacity: 0.9;
+  letter-spacing: 2px;
+  color: #151516;
+}
+
+
+@media (max-width: 1200px) {
+  .howtobuy h6 {
+    color: rgb(42, 41, 44);
+  }
+}
+
+@media (max-width: 800px) {
+  .howtobuy .number-border img {
+    left: 2px;
+    top: 10px;
+  }
+
+  .howtobuy h1 {
+    font-size: 31px;
+    padding-bottom: 5px;
+    margin-bottom: 40px;
+    margin-top: -30px;
+  }
+
+  .howtobuy h5 {
+    font-size: 18px;
+  }
+
+  .howtobuy p {
+    font-size: 14px;
+  }
+
+  .howtobuy h6 {
+    font-size: 20px;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .howtobuy h1 {
+    font-size: 29px;
+    margin-bottom: 30px;
+    margin-top: -30px;
+  }
+
+  .howtobuy h5 {
+    font-size: 16px;
+  }
+
+  .howtobuy p {
+    font-size: 13px;
+  }
+
+  .howtobuy h6 {
+    font-size: 18px;
+  }
+
+}
+
+/* --------------- */
+
+.roadmap {
+  background-color: #00A0E2;
+  padding-top: 80px;
+  padding-bottom: 50px;
+}
+
+.roadmap h1 {
+  text-align: center;
+  color: #181717;
+  font-family: Nipok;
+  padding-bottom: 30px;
+  font-size: 35px;
+}
+
+.roadmap h2 {
+  font-family: Nipok;
+  font-size: 28px;
+  padding: 10px;
+  color: #1b1a1a;
+}
+
+.roadmap ul {
+  padding: 0px;
+  margin-top: 10px;
+  margin: 20px;
+  background-color: #F5F6FB;
+  border-radius: 10px;
+}
+
+.roadmap ul li {
+  font-family: earthtracks;
+  list-style-type: none;
+  font-size: 22px;
+  line-height: 60px;
+  opacity: 0.9;
+  color: #111111;
+}
+
+.roadmap .col-md-4 {
+  padding-left: 0px;
+}
+
+
+@media (max-width: 1000px) {
+  .roadmap ul li {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 800px) {
+  .roadmap h1 {
+    padding-bottom: 0px;
+    font-size: 31px;
+    margin-top: -40px;
+  }
+
+  .roadmap h2 {
+    margin-top: 30px;
+    font-size: 23px;
+  }
+
+  .roadmap ul li {
+    font-size: 19px;
+  }
+}
+
+@media (max-width: 600px) {
+  .roadmap h1 {
+    font-size: 29px;
+  }
+}
+
+/* -------- footer ------------  */
+
+.footer {
+  background-color: #00A0E2;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.footer p {
+  font-family: earthtracks;
+  padding-top: 70px;
+  color: #101012;
+  text-align: center;
+  font-size: 14px;
+}
+
+.footer h6 {
+  color: #ffffff;
+  font-family: Nipok;
+  text-align: center;
+  padding-top: 9px;
+  letter-spacing: 2px;
+  font-size: 13px;
+}
+
+@media (max-width: 800px) {
+  .footer p {
+    font-size: 13px;
+  }
+
+  .footer h6 {
+    font-size: 12px;
+  }
+}
